@@ -1,0 +1,66 @@
+
+/* ? All Use Device - 모든해상도에서 공통으로 사용하는 코드부분 */
+
+@media screen and (max-width:767px){
+    [class*=span]{
+        width:100%; margin-bottom: 30px;
+        color: goldenrod;
+    }
+}
+/* ? mobile Device - 사용자 해상도가 768px이하 일 때 실행되는 부분 */
+
+@media screen and (min-width:768px){
+    .container {
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        overflow: hidden;
+        width: 100%;
+      }
+      [class*=span] {
+        float: left;
+        margin-left: 2%;
+      }
+      [class*=span]:first-child {
+        margin-left: 0;
+      }
+      .span_1 {
+        width: 6.5%;
+      }
+      .span_2 {
+        width: 15%;
+      }
+      .span_3 {
+        width: 23.5%;
+      }
+      .span_4 {
+        width: 32%;
+      }
+      .span_5 {
+        width: 40.5%;
+      }
+      .span_6 {
+        width: 49%;
+      }
+      .span_7 {
+        width: 57.5%;
+      }
+      .span_8 {
+        width: 66%;
+      }
+      .span_9 {
+        width: 74.5%;
+      }
+      .span_10 {
+        width: 83%;
+      }
+      .span_11 {
+        width: 91.5%;
+      }
+      .span_12 {
+        width: 100%;
+      }
+
+}
+/* ? Desktop Device - 사용자 해상도가 1280이상 일 때 실행되는 부분 */

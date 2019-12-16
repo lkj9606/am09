@@ -1,0 +1,63 @@
+@media screen and (max-width:767px) and (orientation:landscape){
+    html{
+        background-color: orange; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }
+    p{
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+
+@media screen and (max-width:767px) and (orientation:portrait){
+    html{
+        background-color: red; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }
+    p{
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+/* *moive Device - 767 lower Resolution (portrait) */
+
+@media screen and (min-width:768px) and (max-width: 1365px) and (orientation:landscape){
+    html{
+        background-color: green; color: white; font-weight: bold;
+    }    
+    h1{
+        font-size:2rem; text-align: right; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/* *Tablet Device 768px - 1024px higher Resolution (landscape) */
+
+@media screen and (min-width:768px) and (max-width: 1365px) and (orientation:portrait){
+    html{
+        background-color: greenyellow; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; text-align: right; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/* *Tablet Device 768px - 1024px higher Resolution (portrait) */
+
+@media screen and (min-width:1366px){
+    html{
+        background-color: blue; color: white;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/* *Desktop Device - 1366 higher Resolution */
