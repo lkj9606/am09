@@ -43,7 +43,7 @@
 
     .container .row.line4 article{height: 195px;}
     .container .row.line4 article.span_2:nth-child(5){width: 70%;}
-    .container .row.line4 article.span_2:last-child{width: 30%;z}
+    .container .row.line4 article.span_2:last-child{width: 30%;}
     /* *line4 Fin */
 }
 
