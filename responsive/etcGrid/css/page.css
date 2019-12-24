@@ -1,3 +1,12 @@
+@media screen and (max-width:767px){
+    .row article{
+        width: 100%; padding: 30px; box-sizing: border-box;
+    }
+    .row article:hover{
+        padding: 50px;
+    }
+}
+/* * mobile Device - 768 lower */
 
 @media screen and (min-width:768px) and (max-width: 959px){
     .row {
@@ -46,6 +55,7 @@
     .container .row.line4 article.span_2:last-child{width: 30%;}
     /* *line4 Fin */
 }
+/* * tablet Device - 768 higher, 959 lower */
 
 @media screen and (min-width:960px){
     .row {
@@ -82,3 +92,4 @@
     .container .row.line4 article{height: 175px;}
     /* *line2 ~ 4 Fin */
 }
+/* * desktop Device - 960 higher */
