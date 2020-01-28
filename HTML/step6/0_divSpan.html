@@ -6,52 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>div Layout</title>
     <style>
-        .header{
+        header{
             background-color: red; margin-bottom: 20px;
             text-align: center;
         }
-        .header ul.nav li{
+        header nav span{
             display: inline-block; width: 19%; background-color: blue;
             color: white;
         }
-        .section{
+        section{
             background-color: red; margin-bottom: 20px;
         }
-        .section > *{
+        section > *{
             height: 500px; display: inline-block;
         }
-        .section .article{
+        section article{
             background-color: yellow; width: 80%;
         }
-        .section .aside{
+        section aside{
             background-color: green; width: 18%;
         }
-        .footer{
+        footer{
             text-align: center; background-color: orange;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
         <span>global Header</span>
-        <ul class="nav">
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-            <li>menu5</li>
-        </ul>
-    </div>
-    <div class="section">
-        <div class="article">
+        <nav>
+            <span>menu1</span>
+            <span>menu2</span>
+            <span>menu3</span>
+            <span>menu4</span>
+            <span>menu5</span>
+        </nav>
+    </header>
+    <section>
+        <article>
             <span>text</span>
-        </div>
-        <div class="aside">
+        </article>
+        <aside>
             <span>quick Menu</span>
-        </div>
-    </div>
-    <div class="footer">
+        </aside>
+    </section>
+    <footer>
         <span>global Footer</span>
-    </div>
+    </footer>
 </body>
 </html>
