@@ -35,3 +35,30 @@ p.w_nowrap{
     width: 150px; white-space: nowrap; text-overflow: ellipsis;
     overflow-x: hidden;
 }
+
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: 10%;
+}
+
+/*
+    baseline: 문자의 밑선에 맞추어 정렬
+    middle: 문자의 중앙을 기준으로 해서 정렬
+    sub : 아래첨자
+    super : 위 첨자
+    text-top:문자의 윗선을 밑선으로 해서 정렬
+    top: 위쪽에 정렬
+    bottom : 아래쪽 정렬
+    % : 퍼센트로 정렬 위치를 지정
+    ! 반드시 대상은 display: inline-block;
+*/	
+p.t_indent{
+    text-indent: 20px; font-size: 40px; line-height: 55px;
+}
+button.test{
+    background:url("https://via.placeholder.com/150x50?text=blabla");
+    border: none; width: 150px; line-height: 50px; font-size: 12px;
+    text-indent: -9999px;
+}
