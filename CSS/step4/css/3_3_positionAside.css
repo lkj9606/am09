@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+}
+body, ul, p{
+    margin:0; padding:0;
+}
+.wrap{
+    height: 100%;
+}
+.wrap aside{
+    height: 100%; width: 250px; background-color: #09f;
+    position: fixed;
+}
+.wrap .contentBox{
+    padding:0 0 0 250px; background-color: mistyrose;
+}
+.wrap .contentBox p{
+    height: 2000px;
+}
