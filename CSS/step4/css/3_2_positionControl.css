@@ -14,5 +14,9 @@ body{
     background-color: #0ff;
 }
 .position_F{
-    
+    position: static; width: 80px; height: 80px; top: 0; right: 0;
+    background-color: #55d; color: white;
 }
+/*
+    ! static은 포지션을 해제하고 이동성을 없애는 기존 객체 속성으로 돌려 놓을 때 사용 한다.
+*/
