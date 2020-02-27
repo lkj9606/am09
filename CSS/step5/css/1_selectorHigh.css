@@ -239,3 +239,26 @@ ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 �
 /*
 	:not은 부정 선택자로써 대상을 제외한 나머지에게 해당 css를 적용시킨다.
 */
+
+.sameAttrSelector input[value ^= "button"]{
+    background-color: red; color: white;
+}
+
+.sameAttrSelector h1[title *= "제목"]{
+    color: red;
+}
+.sameAttrSelector h2[title ^= "화장실"]{
+    color: blue;
+}
+.sameAttrSelector h2[title $= "여자"]{
+    color: pink;
+}
+
+/* 
+    ?속성값일치선택자.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+    ? ^= : 해당 단어로 시작하는 것만 선택.
+    ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
+    ? $= : 해당 단어로 끝나는 대상 선택.
+*/
