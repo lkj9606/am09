@@ -29,3 +29,22 @@ body fieldset ul li > *:not(label):hover,
 body fieldset ul li > *:not(label):focus{
     background-color: #949494;
 }
+body fieldset ul li:last-child input[type='checkbox'] + label{
+    padding: 10px; background-color: #fff;
+    transition-duration: 0.5s; font-size: 16px; color: #000;
+}
+body fieldset ul li:last-child input[type='checkbox']:checked + label{
+    padding: 5px; background-color: #07d;
+    color: #fff; font-size: 12px; border-radius: 5px;
+}
+body fieldset > input{
+    display: block; width: 45%; float: left; border: none;
+    line-height: 34px; color: #fff;
+}
+body fieldset > input[type='submit']{
+    background-color: #00a;
+}
+body fieldset > input[type='reset']{
+    background-color: #a00;
+    margin-left: 10%;
+}
