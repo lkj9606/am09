@@ -98,4 +98,4 @@ section .moveMent .pic .cell:hover img{
     opacity: 1;
 }
 
-/*cell에 오버가 되었을때, cell의 스케일을 1.2배 하고, 깊이는 50px로 하여 튀어나오게 만든다.*/
+/*cell에 오버가 되었을때, cell의 스케일을 1.2배 하고, 깊이는 0px로 하여 튀어나오게 만든다.*/
