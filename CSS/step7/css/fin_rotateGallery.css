@@ -21,4 +21,53 @@ section .moveMent{
     position: absolute; left: 50%; top: 20%;
     transform-style: preserve-3d;
     animation-name: rotater;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* 
+    ?movement
+    ! 목마의 행, 열이 작동하는 박스. (통돌이)
+*/
+
+@keyframes rotater{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+section .moveMent .pic{
+    position: absolute; left: 0; top: 0;
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
+}
+section .moveMent .pic:nth-child(){
+    transform: rotateY(deg) translateZ(-370px);
 }
