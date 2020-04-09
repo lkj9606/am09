@@ -1,0 +1,35 @@
+
+
+@media screen and (min-width: 1280px){
+    header{
+        background: url("../images/main_02.png") no-repeat center center;
+        background-size: cover;
+        border-top: 10px solid #2ecc71;
+        padding: 165px 0;
+    }
+    header div{
+        max-width: 1180px; margin: 0 auto;
+        padding-left: 7.81%;
+    }
+    header div h1{
+        max-width: 183px; width: 11.43%; margin-bottom: 30px;
+    }
+    header div h1 img{
+        width: 100%;
+    }
+    header div p{
+        font-family: 'Roboto Mono'; color: #fff; font-size: 24px;
+        font-weight: 500; line-height: 36px; max-width: 455px;
+        letter-spacing: -2px; margin-bottom: 20px;
+    }
+    header div > a{
+        display: inline-block; text-decoration: none;
+    }
+    /* ?header Fin */
+
+    section{
+        padding: 60px 13.12%;
+    }
+    /* ?section Fin */
+}
+/* ?desktop */
