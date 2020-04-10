@@ -63,12 +63,24 @@
         border: none; border-radius: 0px 10px 10px 0;
         background-color: #2ecc71;
     }
-
-    
     section:nth-of-type(2) .rightArea{
         width: 42%; margin-left: 12%;
     }
     section:nth-of-type(2) .rightArea img{
         width: 100%;
+    }
+
+    section:nth-of-type(3){
+        text-align: center;
+    }
+    section:nth-of-type(3) p{
+        font-family: 'Roboto Mono'; color: #848484;
+        margin-bottom: 25px; line-height: 25px;
+    }
+    section:nth-of-type(3) p strong{
+        display: block;
+    }
+    section:nth-of-type(3) p.blockquote{
+        font-style: italic;
     }
 }
