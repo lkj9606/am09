@@ -9,7 +9,7 @@
     }
     header div{
         max-width: 1180px; margin: 0 auto;
-        padding-left: 7.81%;
+        padding-left: 7.81%; /*1600 / 20.3%*/
     }
     header div h1{
         max-width: 183px; width: 11.43%; margin-bottom: 30px;

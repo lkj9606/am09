@@ -4,15 +4,71 @@
         content:''; display: block; visibility: hidden; clear: both;
     }
     section:first-of-type > dl{
-        width: 33.33%; float: left; text-align: center; padding-top: 130px;
+        width: 26%; float: left; text-align: center; padding-top: 130px;
+        background-repeat: no-repeat; background-position: center top;
+    }
+    section:first-of-type > dl:not(:first-child){
+        margin-left: 11%;
     }
     section:first-of-type > dl:first-child{
-        background:url('../images/main_17.png') no-repeat center top;
+        background-image: url('../images/main_17.png');
     }
     section:first-of-type > dl:nth-child(2){
-        background:url('../images/main_20.png') no-repeat center top;
+        background-image: url('../images/main_20.png');
     }
     section:first-of-type > dl:last-child{
-        background:url('../images/main_22.png') no-repeat center top;
+        background-image: url('../images/main_22.png');
+    }
+    section:first-of-type > dl dt{
+        font-family: 'Raleway'; font-weight: 600;
+        font-size: 22px; line-height: 22px; color: #222;
+        margin-bottom: 25px;
+    }
+    section:first-of-type > dl dd{
+        font-family: 'Roboto Mono'; font-weight: 400;
+        font-size: 16px; line-height: 22px; color: #848484;
+    }
+    /* ? first-of-type Fin */
+
+    section:nth-of-type(2){
+        background-color: #e3e3e3;
+    }
+    section:nth-of-type(2) > div{
+        float: left;
+    }
+    section:nth-of-type(2) .leftArea{
+        width: 46%;
+    }
+    section:nth-of-type(2) .leftArea h2{
+        font-family: 'Raleway'; font-weight: 600;
+        font-size: 22px; line-height: 22px; color: #222;
+        margin-bottom: 25px;
+    }
+    section:nth-of-type(2) .leftArea p{
+        font-family: 'Roboto Mono'; font-weight: 400;
+        font-size: 16px; line-height: 22px; color: #848484;
+        margin-bottom: 30px;
+    }
+    section:nth-of-type(2) .leftArea input{
+        float: left; box-sizing: border-box;
+    }
+    section:nth-of-type(2) .leftArea input[type='text']{
+        width: 57%; font-family: 'Roboto Mono'; font-size: 18px;
+        color: #848484; padding: 15px; border: 1px solid #c8c8c8;
+        border-radius: 10px 0 0 10px;
+    }
+    section:nth-of-type(2) .leftArea input[type='button']{
+        width: 26%; font-family: 'Raleway'; font-weight: 700;
+        font-size: 22px; color: #fff; padding: 15px 20px;
+        border: none; border-radius: 0px 10px 10px 0;
+        background-color: #2ecc71;
+    }
+
+    
+    section:nth-of-type(2) .rightArea{
+        width: 42%; margin-left: 12%;
+    }
+    section:nth-of-type(2) .rightArea img{
+        width: 100%;
     }
 }
