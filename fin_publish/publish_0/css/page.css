@@ -1,0 +1,18 @@
+
+@media screen and (min-width: 1280px){
+    section:after{
+        content:''; display: block; visibility: hidden; clear: both;
+    }
+    section:first-of-type > dl{
+        width: 33.33%; float: left; text-align: center; padding-top: 130px;
+    }
+    section:first-of-type > dl:first-child{
+        background:url('../images/main_17.png') no-repeat center top;
+    }
+    section:first-of-type > dl:nth-child(2){
+        background:url('../images/main_20.png') no-repeat center top;
+    }
+    section:first-of-type > dl:last-child{
+        background:url('../images/main_22.png') no-repeat center top;
+    }
+}
