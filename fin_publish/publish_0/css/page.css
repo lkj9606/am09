@@ -82,7 +82,8 @@
         color: #2e2e2e; font-style: normal;
     }
     section:nth-of-type(3) p.blockquote q{
-        font-style: italic;
+        font-style: italic; margin-bottom: 20px;
+        display: block;
     }
 
     section:nth-of-type(3) ul{

@@ -38,5 +38,8 @@
         text-decoration: none; font-size: 16px; line-height: 26px;
         color: #848484; display: inline-block;
     }
+    footer a:not(:first-child){
+        margin-left: 1.87%;
+    }
 }
 /* ?desktop */
