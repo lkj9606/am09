@@ -41,6 +41,7 @@
         margin-left: 1.87%;
     }
 }
+/* ?tablet, desktop 공용코드 */
 
 @media screen and (min-width: 768px) and (max-width:1279px){
     header div{
@@ -50,7 +51,7 @@
         width: 27%; 
     }
 }
-/* ?tablet */
+/* ?tablet - 변경되는 코드*/
 
 @media screen and (min-width: 1280px){
     header div{
@@ -60,4 +61,4 @@
         width: 11.43%;
     }
 }
-/* ?desktop */
+/* ?desktop - 변경되는 코드*/
