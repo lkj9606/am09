@@ -1,3 +1,6 @@
+section > h2{
+    display: none;
+}
 @media screen and (max-width: 767px){
     section:after{
         content:''; display: block; visibility: hidden; clear: both;
@@ -6,16 +9,16 @@
         text-align: center; padding-top: 130px;
         background-repeat: no-repeat; background-position: center top;
     }
-    section:first-of-type > dl:not(:last-child){
+    section:first-of-type > dl:not(:last-of-type){
         margin-bottom: 50px;
     }
-    section:first-of-type > dl:first-child{
+    section:first-of-type > dl:first-of-type{
         background-image: url('../images/main_17.png');
     }
-    section:first-of-type > dl:nth-child(2){
+    section:first-of-type > dl:nth-of-type(2){
         background-image: url('../images/main_20.png');
     }
-    section:first-of-type > dl:last-child{
+    section:first-of-type > dl:last-of-type{
         background-image: url('../images/main_22.png');
     }
     section:first-of-type > dl dt{
@@ -116,16 +119,16 @@
         text-align: center; padding-top: 130px;
         background-repeat: no-repeat; background-position: center top;
     }
-    section:first-of-type > dl:not(:last-child){
+    section:first-of-type > dl:not(:last-of-type){
         margin-bottom: 50px;
     }
-    section:first-of-type > dl:first-child{
+    section:first-of-type > dl:first-of-type{
         background-image: url('../images/main_17.png');
     }
-    section:first-of-type > dl:nth-child(2){
+    section:first-of-type > dl:nth-of-type(2){
         background-image: url('../images/main_20.png');
     }
-    section:first-of-type > dl:last-child{
+    section:first-of-type > dl:last-of-type{
         background-image: url('../images/main_22.png');
     }
     section:first-of-type > dl dt{
@@ -224,16 +227,16 @@
         width: 26%; float: left; text-align: center; padding-top: 130px;
         background-repeat: no-repeat; background-position: center top;
     }
-    section:first-of-type > dl:not(:first-child){
+    section:first-of-type > dl:not(:first-of-type){
         margin-left: 11%;
     }
-    section:first-of-type > dl:first-child{
+    section:first-of-type > dl:first-of-type{
         background-image: url('../images/main_17.png');
     }
-    section:first-of-type > dl:nth-child(2){
+    section:first-of-type > dl:nth-of-type(2){
         background-image: url('../images/main_20.png');
     }
-    section:first-of-type > dl:last-child{
+    section:first-of-type > dl:last-of-type{
         background-image: url('../images/main_22.png');
     }
     section:first-of-type > dl dt{
