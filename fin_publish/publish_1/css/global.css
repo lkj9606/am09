@@ -1,5 +1,6 @@
 header > div nav ul li a,
-header > div > ul li p{
+header > div > ul li p,
+footer > div div:not(:first-of-type) h2{
     font-family: 'Roboto';
 }
 header > div > ul li h2{
@@ -115,4 +116,26 @@ footer > div{
         background-color: #00e0d0; border-color: #00e0d0;
     }
     /* header Fin */
+
+    footer{
+        background: url('../images/bg_05.png') no-repeat left top;
+        background-size: cover;
+    }
+
+    footer > div div:not(:last-of-type){
+        width: 32%; float: left; margin: 0 0 70px 2%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div:first-of-type h2{
+        margin-bottom: 30px; line-height: 0;
+    }
+    footer > div div:not(:first-of-type) h2{
+        font-size: 15px; color: white; font-weight: 900;
+    }
+    
+    footer > div div:last-of-type{
+        width: 100%; clear: left;
+    }
 }
