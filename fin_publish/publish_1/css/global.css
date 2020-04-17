@@ -146,20 +146,27 @@ footer > div{
     }
     footer > div div:nth-of-type(2) address span{
         display: block; padding-left: 30px;
+        background-repeat: no-repeat; background-position: left 5px;
     }
     footer > div div:nth-of-type(2) address span a{
         display: block; color: white;
     }
     footer > div div:nth-of-type(2) address span:first-child{
-        background: url('../images/bul_map.png') no-repeat left 5px;
+        background-image: url('../images/bul_map.png');
     }
     footer > div div:nth-of-type(2) address span:last-child{
-        background: url('../images/bul_phone.png') no-repeat left 5px;
+        background-image: url('../images/bul_phone.png');
     }
 
     footer > div div:nth-of-type(3) input[type='email']{
         font-size: 14px; line-height: 36px; color: rgba(255,255,255,0.75);
         background-color: transparent; border: 1px solid rgba(255,255,255,0.5);
+        padding: 0 15px; box-sizing: border-box;
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 23.72%; height: 38px;
+        background: rgba(255,255,255, 0.5) url('../images/btn_send.png') no-repeat center;
+        text-indent: -9999px; border: none;
     }
     footer > div div:last-of-type{
         width: 100%; clear: left;
