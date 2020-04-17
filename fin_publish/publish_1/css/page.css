@@ -1,0 +1,40 @@
+
+@media screen and (min-width: 1280px){
+    body > figure:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    body > figure img{
+        max-width: 235px; width: 25%; float: left;
+    }
+    body > figure figcaption{
+        display: block; margin-left: 10.65%;
+        width: 64.35%; float: left;
+    }
+    body > figure figcaption > *:not(a){
+        margin-bottom: 30px;
+    }
+    body > figure figcaption h2{
+        font-size: 22px; font-weight: 700;
+    }
+    body > figure figcaption p{
+        font-size: 14px; line-height: 22px; font-weight: 300;
+    }
+    body > figure figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') no-repeat left top;
+        background-size: cover;
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block;
+        width: 100px; padding: 24px 0px 31px 5px;
+        border: 3px solid white; font-size: 45px; color: white;
+        border-radius: 60px;
+        text-align: center;
+        margin: 0 auto 35px;
+    }
+}

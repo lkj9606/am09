@@ -1,15 +1,15 @@
 header > div nav ul li a,
 header > div > ul li p,
-footer > div div:not(:first-of-type) h2{
+footer > div *{
     font-family: 'Roboto';
 }
-header > div > ul li h2{
+header > div > ul li h2,
+body > figure figcaption h2{
     font-family: 'Playfair Display';
 }
 .btn_more{
     font-family: 'Hammersmith One';
 }
-
 
 a{
     text-decoration: none;
@@ -203,5 +203,14 @@ footer > div{
     }
     footer > div div:last-of-type{
         width: 100%; clear: left;
+    }
+    footer > div div:last-of-type a{
+        color: white; display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
     }
 }
