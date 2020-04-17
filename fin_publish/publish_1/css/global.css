@@ -158,15 +158,48 @@ footer > div{
         background-image: url('../images/bul_phone.png');
     }
 
+    footer > div div:nth-of-type(3) > input{
+        float: left; margin-bottom: 25px;
+    }
     footer > div div:nth-of-type(3) input[type='email']{
         font-size: 14px; line-height: 36px; color: rgba(255,255,255,0.75);
         background-color: transparent; border: 1px solid rgba(255,255,255,0.5);
         padding: 0 15px; box-sizing: border-box;
+        width: 71.18%;
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: 23.72%; height: 38px;
+        width: 23.72%; height: 38px; margin-left: 5%;
         background: rgba(255,255,255, 0.5) url('../images/btn_send.png') no-repeat center;
         text-indent: -9999px; border: none;
+    }
+    footer > div div:nth-of-type(3) > ul{
+        clear: left;
+    }
+    footer > div div:nth-of-type(3) > ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) > ul li a{
+        display: block;
+        background-repeat: no-repeat; background-size: contain;
+        text-indent: -9999px;
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns01.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns02.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns03.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns04.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns05.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns06.png');
     }
     footer > div div:last-of-type{
         width: 100%; clear: left;
