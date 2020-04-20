@@ -1,10 +1,12 @@
 header > div nav ul li a,
 header > div > ul li p,
-footer > div *{
+footer > div *,
+section.videoArea h2{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
-body > figure figcaption h2{
+body > figure figcaption h2,
+section.expArea h2{
     font-family: 'Playfair Display';
 }
 .btn_more{
