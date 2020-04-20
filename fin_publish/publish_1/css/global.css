@@ -1,12 +1,14 @@
 header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
-section.videoArea h2{
+section.videoArea h2,
+section.expArea ul li > *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 body > figure figcaption h2,
-section.expArea h2{
+section.expArea h2,
+section.expArea p{
     font-family: 'Playfair Display';
 }
 .btn_more{
@@ -18,6 +20,10 @@ a{
 }
 header > div nav input[type='checkbox']{
     display: none;
+}
+
+section[class *= Area] > hr{
+    width: 3.12%; min-width: 50px; border-top: 2px solid #c6c4c9; margin: 0 auto 45px;
 }
 /* ? All Using CSS */
 
