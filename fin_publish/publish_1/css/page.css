@@ -96,4 +96,58 @@
     section.expArea ul li:nth-child(6){
         background-image: url('../images/ico_06.png');
     }
+    /* expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_03.png') no-repeat left top;
+        background-size: cover;
+    }
+    section.teamArea > *{
+        text-align: center; color: white;
+    }
+    section.teamArea > hr{
+        margin: 0 auto 0;
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+        padding-top: 70px;
+    }
+    section.teamArea p{
+        font-size: 14px; line-height: 22px; margin-bottom: 15px;
+        font-weight: 400;
+    }
+    section.teamArea div ul{
+        margin-bottom: 70px;
+    }
+    section.teamArea div ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.teamArea div ul li{
+        display: block; float: left; width: 23.5%;
+        box-sizing: border-box;
+    }
+    section.teamArea div ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea div ul li figure{
+        background: url('https://via.placeholder.com/220x230') no-repeat center top;
+        background-size: contain;
+        padding-top: 230px;
+    }
+    section.teamArea div ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+    }
+    section.teamArea div ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea div ul li figure figcaption dl dd{
+        font-size: 13px; color: rgba(255,255,255,0.7);
+        font-weight: 300;
+    }
+    section.teamArea div ul + p{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea div a.btn_more{
+        margin: 0 auto; max-width: 140px;
+    }
 }

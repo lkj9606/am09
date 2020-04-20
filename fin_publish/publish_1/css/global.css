@@ -2,13 +2,17 @@ header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
 section.videoArea h2,
-section.expArea ul li > *{
+section.expArea ul li > *,
+section.teamArea div ul li figure figcaption dl > *,
+section.teamArea div ul + p{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 body > figure figcaption h2,
 section.expArea h2,
-section.expArea p{
+section.expArea p,
+section.teamArea h2,
+section.teamArea > p{
     font-family: 'Playfair Display';
 }
 .btn_more{
