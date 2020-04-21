@@ -150,4 +150,16 @@
     section.teamArea div a.btn_more{
         margin: 0 auto; max-width: 140px;
     }
+    /* teamArea Fin */
+
+    section.worksArea{
+        padding-bottom: 70px;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        position: relative;
+    }
+    section.worksArea h2 a{
+        
+    }
 }

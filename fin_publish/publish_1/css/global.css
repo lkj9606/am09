@@ -12,7 +12,8 @@ body > figure figcaption h2,
 section.expArea h2,
 section.expArea p,
 section.teamArea h2,
-section.teamArea > p{
+section.teamArea > p,
+section.worksArea h2{
     font-family: 'Playfair Display';
 }
 .btn_more{
