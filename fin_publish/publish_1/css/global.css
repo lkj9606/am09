@@ -4,7 +4,8 @@ footer > div *,
 section.videoArea h2,
 section.expArea ul li > *,
 section.teamArea div ul li figure figcaption dl > *,
-section.teamArea div ul + p{
+section.teamArea div ul + p,
+section.worksArea h2 a{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
