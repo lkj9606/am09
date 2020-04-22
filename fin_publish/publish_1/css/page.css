@@ -179,5 +179,99 @@
         max-width: 140px; margin: 0 auto;
     }
     /* worksArea Fin */
+
+    .talkArea{
+        background: url('../images/bg_04.png') no-repeat left top;
+        background-size: cover; padding: 70px 0; text-align: center;
+    }
+    .talkArea p{
+        width: 940px; margin: 0 auto 45px;
+        background: url('../images/quote.png') no-repeat center top;
+        padding-top: 70px; color: white; font-size: 16px;
+        line-height: 26px; font-weight: 400;
+    }
+    .talkArea p > *{
+        display: block;
+    }
+    .talkArea p strong{
+        margin: 50px 0 5px;
+        font-size: 14px; line-height: 14px; font-weight: 900;
+    }
+    .talkArea p span{
+        font-size: 13px; font-weight: 300;
+    }
+    .talkArea div{
+        width: 940px; margin: 0 auto;
+        text-align: center;
+    }
+    .talkArea div > *{
+        display: inline-block; vertical-align: middle;
+    }
+    .talkArea div > a{
+        font-size: 22px; color: rgba(255,255,255,0.5);
+    }
+    .talkArea div ul{
+        width: 33%; max-width: 310px;
+    }
+    .talkArea div ul li{
+        float: left; display: block; width: 20%;
+    }
+    .talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    .talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding 0.35s ease-in-out;
+    }
+    .talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
+    .talkArea div ul li.active a img{
+        width: 100%; 
+    }
+    .talkArea div ul li:not(.active) a img{
+        width: 50%; transition: width 0.35s ease-in-out;
+    }
+    .talkArea div ul li:not(.active):hover a img{
+        width: 100%;
+    }
+    /* talkArea Fin */
     
+    section.contactArea:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left; display: block;
+    }
+    section.contactArea form fieldset{
+        width: 43.61%;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size:22px; font-weight: 700; color: #413d4b;
+        margin-bottom: 35px;
+    }
+    section.contactArea form fieldset *:not(legend){
+        box-sizing: border-box;
+    }
+    section.contactArea form fieldset input:not([type='submit']),
+    section.contactArea form fieldset textarea{
+        border: 1px solid #e5e5e5; width: 100%; padding: 15px 20px;
+        margin-bottom: 20px; font-weight: 300; color: rgba(65,61,75,0.5);
+    }
+    section.contactArea form fieldset textarea{
+        height: 200px; resize: none; 
+    }
+    section.contactArea form fieldset input[type='submit'].btn_more{
+        background-color: transparent; cursor: pointer; min-width: 120px;
+    }
+    /* contactArea Left Fin */
+
+    section.contactArea div{
+        width: 40.95%;
+        margin-left: 15.44%;
+    }
 }
