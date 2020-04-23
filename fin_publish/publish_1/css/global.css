@@ -159,13 +159,8 @@ section[class *= Area] > hr{
             background: url('../images/bg_05.png') no-repeat left top;
             background-size: cover;
         }
-    
-        footer > div div:first-of-type,
-        footer > div div:nth-of-type(2){
-            width: 47.5%; float: left; margin: 0 0 70px;
-        }
-        footer > div div:nth-of-type(2){
-            margin-left: 5%;
+        footer > div div:not(:last-of-type){
+            margin-bottom: 30px;
         }
         footer > div div > h2{
             margin-bottom: 20px;
@@ -197,9 +192,6 @@ section[class *= Area] > hr{
             background-image: url('../images/bul_phone.png');
         }
     
-        footer > div div:nth-of-type(3){
-            clear: left;
-        }
         footer > div div:nth-of-type(3) > input{
             float: left; margin-bottom: 25px;
         }
@@ -207,16 +199,14 @@ section[class *= Area] > hr{
             font-size: 14px; line-height: 36px; color: rgba(255,255,255,0.75);
             background-color: transparent; border: 1px solid rgba(255,255,255,0.5);
             padding: 0 15px; box-sizing: border-box;
-            width: 35%;
+            width: 75%;
         }
         footer > div div:nth-of-type(3) input[type='submit']{
-            width: 10%; height: 38px; margin-left: 2%;
+            width: 23%; height: 38px; margin-left: 2%;
             background: rgba(255,255,255, 0.5) url('../images/btn_send.png') no-repeat center;
             text-indent: -9999px; border: none;
         }
-        footer > div div:nth-of-type(3) > ul{
-            width: 45%; float: left; margin-left: 5%;
-        }
+        
         footer > div div:nth-of-type(3) > ul li{
             display: inline-block; width: 35px; line-height: 35px;
         }
@@ -246,17 +236,15 @@ section[class *= Area] > hr{
         footer > div div:nth-of-type(3) > ul li:nth-child(6) a{
             background-image: url('../images/ico_sns06.png');
         }
+        
         footer > div div:last-of-type{
-            width: 100%; clear: left;
+            text-align: center;
         }
         footer > div div:last-of-type a{
             color: white; display: inline-block;
         }
         footer > div div:last-of-type a:not(:first-of-type){
             margin-left: 30px;
-        }
-        footer > div div:last-of-type p{
-            float: right;
         }
 
 }
