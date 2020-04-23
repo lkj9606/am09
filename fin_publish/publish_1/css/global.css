@@ -82,7 +82,7 @@ section[class *= Area] > hr{
             width: 100%;
         }
         header > div nav{
-            width: 50%; margin-left: 15%; float: left;
+            width: 50%; margin-left: 15%; float: right;
         }
         header > div nav label.mui{
             padding: 3px 3px 0 3px;
@@ -120,10 +120,10 @@ section[class *= Area] > hr{
     
         header > div > ul{
             margin-bottom: 125px;
+            clear: both;
         }
         header > div > ul li{
-            padding-top: 165px; display: block;
-            /* padding: 165px 0 125px; */
+            padding-top: 65px; display: block;
         }
         header > div > ul li h2{
             font-size: 32px; color: white; font-weight: 900;
