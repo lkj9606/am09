@@ -52,7 +52,7 @@ section[class *= Area] > hr{
     footer > div{
             max-width: 600px;
             margin: 0 auto;
-            padding: 70px 0;
+            padding: 70px 3%;
         }
         .btn_more{
             display: block;
@@ -69,6 +69,7 @@ section[class *= Area] > hr{
         header > div{
             max-width: 600px;
             margin: 0 auto;
+            padding: 0 3%;
             position: relative;
         }
         header > div h1{
@@ -87,28 +88,29 @@ section[class *= Area] > hr{
             padding: 3px 3px 0 3px;
             border: 1px solid white;
             width: 22px; cursor: pointer;
-            display: block; margin-left: auto;
+            display: block; margin:15px 0 15px auto;
         }
         header > div nav label.mui span{
             border-top: 3px solid white;
             display: block; margin-bottom: 3px;
         }
         header > div nav label.mui + input[type='checkbox']#mnav:checked + ul{
-
+            height: 300px;
         }
         header > div nav ul{
-            
+            height: 0; overflow: hidden;
+            transition: height 1s ease-in;
         }
         header > div nav ul li{
-            display: inline-block;
+            display: block;
         }
         header > div nav ul li:not(:first-child){
             margin-left: 1.56%;
         }
         header > div nav ul li a{
             font-size: 13px; font-weight: 900; color: white;
-            display: block;
-            line-height: 50px;
+            display: block;  text-align: right;
+            line-height: 40px;
         }
         header > div nav ul li a.active,
         header > div nav ul li a:hover{
