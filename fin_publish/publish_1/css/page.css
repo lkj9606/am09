@@ -152,7 +152,7 @@
     }
     section.worksArea h2 a{
         font-size: 14px; font-weight: 300; color: #413d4b;
-        position: absolute; right: 0;
+        position: absolute; right: 0; line-height: 24px;
     }
     section.worksArea ul{
         margin-bottom: 70px;
@@ -161,7 +161,10 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     section.worksArea ul li{
-        float: left; display: block; width: 16.66%; line-height: 0;
+        display: block; line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 25px;
     }
     section.worksArea ul li img{
         width: 100%;
@@ -176,9 +179,9 @@
         background-size: cover; padding: 70px 0; text-align: center;
     }
     .talkArea p{
-        max-width: 728px; margin: 0 auto 45px;
+        max-width: 600px; margin: 0 auto 45px;
         background: url('../images/quote.png') no-repeat center top;
-        padding-top: 70px; color: white; font-size: 16px;
+        padding: 70px 3% 0; color: white; font-size: 16px;
         line-height: 26px; font-weight: 400;
     }
     .talkArea p > *{
@@ -192,7 +195,7 @@
         font-size: 13px; font-weight: 300;
     }
     .talkArea div{
-        max-width: 728px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
         text-align: center;
     }
     .talkArea div > *{
@@ -202,7 +205,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     .talkArea div ul{
-        width: 33%; max-width: 310px;
+        width: 80%; max-width: 310px;
     }
     .talkArea div ul li{
         float: left; display: block; width: 20%;
@@ -233,12 +236,8 @@
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
-    section.contactArea div{
-        float: left; display: block;
-    }
     section.contactArea form fieldset{
-        width: 43.61%;
+        margin-bottom: 25px;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
@@ -261,10 +260,6 @@
     }
     /* contactArea Left Fin */
 
-    section.contactArea div{
-        width: 40.95%;
-        margin-left: 15.44%;
-    }
     section.contactArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
