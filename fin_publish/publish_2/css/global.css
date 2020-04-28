@@ -1,4 +1,6 @@
-
+body{
+    background-color: #e4e5e7;
+}
 .mont{
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,12 +19,14 @@ a{
 
 @media screen and (min-width: 1280px){
     header > div,
-    footer > div{
+    footer > div,
+    header+nav .slideNav{
         max-width: 1170px; margin: 0 auto; 
     }
 
     header{
         border-bottom: 1px solid #f0f2f7;
+        background-color: white;
     }
     header > div > *
     /*,header > div nav ul li*/

@@ -1,6 +1,31 @@
 
 @media screen and (min-width: 1280px){
     header+nav{
-        clear: left;
+        clear: left; background-color: white;
     }
+    header+nav .slideNav:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header+nav .slideNav > *{
+        float: left;
+    }
+    header+nav .slideNav ul{
+        width: 82.9%;
+    }
+    header+nav .slideNav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header+nav .slideNav ul li:not(:last-child){
+        float: left;
+    }
+    header+nav .slideNav ul li:last-child{
+        float: right;
+    }
+    header+nav .slideNav input[type='search']{
+        width: 17.1%;
+    }
+    header+nav .slideNav ul li a{
+        
+    }
+
 }
