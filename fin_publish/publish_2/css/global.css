@@ -20,7 +20,8 @@ a{
 @media screen and (min-width: 1280px){
     header > div,
     footer > div,
-    header+nav .slideNav{
+    header+nav .slideNav,
+    section.slideArea > div{
         max-width: 1170px; margin: 0 auto; 
     }
 
