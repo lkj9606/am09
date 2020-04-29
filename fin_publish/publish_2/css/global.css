@@ -21,7 +21,7 @@ a{
     header > div,
     footer > div,
     header+nav .slideNav,
-    section.slideArea > div{
+    .contentArea{
         max-width: 1170px; margin: 0 auto; 
     }
 
