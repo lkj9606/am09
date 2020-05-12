@@ -134,4 +134,11 @@
     .contentArea > form fieldset input[type='text']{
         width: 5%;
     }
+    .contentArea > form fieldset span.sbSelect{
+        margin-left: 4.27%;
+    }
+    .contentArea > form fieldset label[for='sb_keywords']{
+        padding-left: 2.56%; margin-left: 1.7%;
+        border-left: 1px solid rgba(0,0,0,0.05);
+    }
 }
