@@ -106,6 +106,7 @@
         /* padding: 0 0px; */
         line-height: 56px; padding: 0 1.7%;
         box-sizing: border-box;
+        margin-bottom: 30px;
     }
     .contentArea > form fieldset label{
         font-size: 11px; color: #a1a7bd; font-weight: 700;
@@ -137,8 +138,93 @@
     .contentArea > form fieldset span.sbSelect{
         margin-left: 4.27%;
     }
-    .contentArea > form fieldset label[for='sb_keywords']{
+    .contentArea > form fieldset label[for='sb_keywords'],
+    .contentArea > form fieldset label[for='ship_select']{
         padding-left: 2.56%; margin-left: 1.7%;
         border-left: 1px solid rgba(0,0,0,0.05);
+    }
+    .contentArea > form fieldset input[type='search'],
+    .contentArea > form fieldset input[id='range_minprice']{
+        margin-left: 1.02%;
+    }
+    .contentArea > form fieldset label[for='range_minprice'],
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        margin-left: 2.56%;
+    }
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; color: #343e5c;
+        transition-duration: 0.5s;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset span.shipSelect{
+        padding-left: 6.83%;
+    }
+    /* sortBy Fin */
+
+    .contentArea aside{
+        width: 23%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c;
+        padding: 15px 9.25% 15px 7.4%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right;
+        transform: rotate(-90deg); transition: transform 0.5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; color: #a1a7bd; opacity: 0;
+        padding: 0px 7.4%; transition-duration:0.3s;
+
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; opacity: 1;
+        padding: 15px 7.4%; border-top: 1px solid #dfe4ee;
+
+    }
+
+        /* aside Nav Fin */
+
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+        padding-top: 25px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    .contentArea aside fieldset legend{
+        width: 100%; font-size: 11px; color: #343e5c;
+        box-sizing: border-box; padding: 0 7.4% 15px;
+        border-bottom: 1px solid #f0f2f7; position: relative;
+        top: 30px; font-weight: 700; text-transform: uppercase;
+    }
+    
+    /* aside Fin */
+    
+    .contentArea section{
+        width: 74.44%; margin-left: 2.56%;
+        float: left;
+    }
+    .contentArea .paging{
+        clear: both;
     }
 }
