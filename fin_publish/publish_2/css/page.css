@@ -223,6 +223,7 @@
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer;
         display: inline-block; box-sizing: border-box;
+        padding-left: 20.37%;
     }
     .contentArea aside fieldset label,
     .contentArea aside fieldset span{
@@ -231,16 +232,17 @@
     .contentArea aside fieldset span{
         font-size: 11px; color: #bdbfd3;
         display: inline-block; width: 15%; text-align: center;
+        max-width: 76px;
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
-        width: 83%; padding-left: 16%;
+        width: 83%; max-width: 215px;
     }
     .contentArea aside fieldset label[for*='Condition']{
-        width: 93%; padding-left: 18%;
+        width: 93%; max-width: 270px;
     }
     .contentArea aside fieldset label[for*='dlvr']{
-        width: 49%; padding-left: 16.37%;
+        width: 49%; max-width: 135px;
     }
     .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
