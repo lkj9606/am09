@@ -64,3 +64,50 @@ function numbOP2(){
     var result = a*b/10;
     console.log(result);
 }
+
+// * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 저장및출력
+
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+
+// * case.2 숫자 5를 2로 나누었을 때 나머지를 result 변수에 저장 및 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+
+// * case.3 'hi' 가 담긴 변수 a, 'WEB'이 담긴 변수 b를 합쳐 출력.
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB'; 
+    console.log(a + b);
+}
+
+// * case.4 ul, li 구조의 tag를 html page에 삽입 후 출력.
+
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS..!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+
+// todo.2 다음 code를 복합대입연산자를 이용하여 간소화.
+function compareOperator(){
+    var a = 10;
+    a += 20;
+    console.log('a = ' + a);
+}
+
+// *case.4 연산자가 뒤로 올 경우
+function numberPlusAfter(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //? ??    
+    alert(number++); //? ??    
+    alert(number++); //? ??    
+}
