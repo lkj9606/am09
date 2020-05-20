@@ -66,4 +66,45 @@ function stringtoNumb(){
 // *case. 5-1 background-color red
 function bgColorRed(){
     var bgColor = 0xF00;
+    $("body").css("background-color", "#" + bgColor.toString(16));
+}
+
+// *case. 5-2 background-color random (1초마다)
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xffffff;
+        bgColor = parseInt(bgColor);
+        bgColor = bgColor.toString(16);
+
+        $("body").css("background-color", "#" + bgColor);
+    }, 1000);
+}
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+
+/*
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+    
+    ? Number
+    * Number(value); - 정수 형,실수 형
+
+    ? typeof
+    * typeof(value); 자료형 판별
+*/
+
+function numbString(){
+    var test = '300';
+    var result = parseInt(test) + 10;
+    console.log("result = " + result);
+}
+
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들어라.
+
+function todo4(){
+    var test = "100.50";
+    var result = Number(test) + 150 + Number("20");
+    // ? or parseFloat(test) + 150 + parseInt("20");
+    console.log("result = " + result);
 }
