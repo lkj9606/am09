@@ -32,3 +32,38 @@ function forcedNumber(){
     var result = 2 + true;
     console.log(result);
 }
+
+// *case.4 강제 불린 - 문자형 변환
+function forcedString2(){
+    var a = '2' + true;
+    console.log(a);
+}
+
+// *case.5 test1 에 들어있는 숫자를 문자로 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환.
+    
+    ? .toString()
+    * Number.toString(16); - (16진수) 문자형으로 변환.
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형
+*/
+function stringNumb(){
+    var test1 = 15;
+    var result = String(test1); //?전역함수 string
+    console.log(typeof(result) + '=' + result);
+}
+
+function stringtoNumb(){
+    var test1 = 15;
+    var result = test1.toString();
+    //? Number 객체에서 제공하는 toString. 8,16진수 변형기능 제공(ex5-1 ~ 2)
+    console.log(typeof(result) + '=' + result);
+}
+
+// *case. 5-1 background-color red
+function bgColorRed(){
+    var bgColor = 0xF00;
+}
