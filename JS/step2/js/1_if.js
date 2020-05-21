@@ -105,3 +105,42 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가. 맞겠구먼.');
     }
 }
+
+// *exp.4 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = window.prompt('사용자의 ID');
+    if(userID == "mark"){
+        alert('접속승인!');
+    }else if(userID != 'mark'){
+        alert('잘못된 ID. 접속불가.');
+    }
+}
+/*
+    todo.5
+    todo.사용자 id 'mark' 와 password '1234'를 입력받고 둘다 맞을경우 
+    todo.승인 메시지 출력.
+*/
+function userInfoCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+    if(userID=="Mark"&&userPW=="1234"){
+        alert('Mark님으로 확인되었습니다. 접속승인!');
+    }else if(userID!="Mark" || userPW!="1234"){
+        alert('ID 혹은 Password가 틀렸습니다.');
+    }
+}
+    // !tune.5
+
+function userInfoCheck1(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+    (userID=="Mark"&&userPW=="1234")? alert('Mark님으로 확인.') : alert("ID혹은PW틀림.");
+}
+/*
+    todo.6
+    todo. 사용자 id 'mark' 와 password '1234'를 입력받고
+    todo. 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+*/
+function userInfoCheck2(){
+    
+}
