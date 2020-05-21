@@ -24,9 +24,56 @@ function amORpm(){
 
     // ? 조건문
     if(hour < 12){
+        //hour변수값(현재시간)이 12보다 작을때 실행
         alert('오전');
     }
     if(hour >= 12){
+        //hour변수값(현재시간)이 12보다 크거나 같을때 실행
         alert('오후');
     }
+}
+
+// * case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDay();
+    // ? 변수선언
+
+    if(day < 30){
+        alert('아직 말일 아님.');
+    }else{
+        alert('말일.');
+    }
+} 
+
+// * case.3 아침? 점심? 저녁?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 11){ //11시보다 현시각이 작으면 아침
+        alert('아침먹어.'); 
+    }else if(hour < 15){ // 그것이 아니고15시보다 현시각이 작으면 점심
+        alert('점심먹어.');
+    }else{ // 그것도 아닐경우 저녁
+        alert('저녁먹어.');
+    }
+}
+
+// *exp.1 숫자판별 (입력받은수 양수? 음수? 0)
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요.','양수,음수 상관없음');
+
+    if(numb > 0){
+        alert('양수!');
+    }else if(numb < 0){
+        alert('음수!');
+    }else{
+        alert('0!');
+    }
+}
+
+// *exp.2 홀,짝 판별 (입력받은수 홀수? 짝수?)
+function oddOrEven(){
+
 }
