@@ -49,3 +49,21 @@ function thinkJS(){
     } //? i가 10이되는 순간 break.
     document.write("종료 i = " +i); //? 이미 변경된 10이 출력.
 }
+
+// *exp.2 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고'];
+
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", 
+    "반복문 for", "반복문 while", "함수", "클래스"];
+
+    for () {
+        document.write( + '번째 내용 = ' + '<br>');
+    }
+}
