@@ -59,11 +59,72 @@ function favorFluit(){
     }
 }
 
+//*exp.3 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+
 function arrayFor(){
     var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", 
     "반복문 for", "반복문 while", "함수", "클래스"];
 
-    for () {
-        document.write( + '번째 내용 = ' + '<br>');
+    for (var i = 0; i < data.length; i++) {
+        document.write( i + '번째 내용 = ' + data[i] +  '<br>');
+    }
+}
+
+function arrayForES6(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", 
+    "반복문 for", "반복문 while", "함수", "클래스"];
+
+    for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        document.write( i + '번째 내용 = ' + element +  '<br>');
+    }
+    // for (const key in object) {
+    //     if (object.hasOwnProperty(key)) {
+    //         const element = object[key];
+    //         document.write( i + '번째 내용 = ' + element +  '<br>');
+            
+    //     }
+    // }
+} 
+
+//*exp.4 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고'];//?4개의 배열 선언후
+
+    for (var i = array.length - 1; i >= 0; i--){//?i 변수는 배열의 갯수 -1 (4-1 = 3) 로 선언, 그 변수가 0보다 크거나 같을때 까지 (3>=0 ----> 3,2,1,0) 실행 .
+        alert(array[i]);//?그래서 3,2,1,0 순으로 출력. 이것을 역반복
+    }
+}
+
+// *exp.5 continue문
+
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;//? 위 조건이 참일 지라도 continue가 존재 하면, continue 이하 구문은 실행 되지 않는다.
+        document.write(i + '<br>');  //?vscode 에서는 불투명하게 시각화 해서 보여준다.
+    }
+    document.write('최종 i = ' + i + '<br>');  //? 최종 적으로 변경된 i 의 수치(11)만 출력된다.
+}
+
+//*exp.6 continue활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++) {
+        //조건문
+        if (i % 2 == 1) {
+            /*
+                i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ..
+                이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+            continue;                
+        }
+        output += i; //(2, 6, 12, 20, 30) - 짝수만 선별하여 10까지의 셈합.
+        //출력
+        alert(output);
     }
 }
