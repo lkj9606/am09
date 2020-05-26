@@ -160,3 +160,21 @@ function halfPyramid(){
     }
     document.write(star); //?  반절 피라미드출력.
 }
+
+// *todo.1 역반절 피라미드
+
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >=1; i--){ //? 1. ifor = 10~1 까지 수행
+        for (var j = 0; j < i; j++){ //?  jfor = j가 i보다 작거나 같을 때 까지 반복 수행 10,9,8,7,6....
+            star += '*'; //? 변수 star에 반복생성된 만큼 *을 넣음.
+        }
+        star += '<br>'; //? i for 만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star); //? 역반절 피라미드 출력.
+}
+
+// *todo.2 피라미드.
+function pyramid(){
+    var star = '';
+}
