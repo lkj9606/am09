@@ -133,8 +133,30 @@ function runContinue(){
 
 function forBreak(){
     for (var i = 1; i <= 10; i++){
-        break;//?
-        document.write(i + '<br>'); //?
+        break;//? 위 조건이 참일 지라도 break가 존재 하면, 반복 루프에서 강제로 빠져나오게 된다.
+        document.write(i + '<br>'); //? 수행불가
     }
-    document.write('최종 i =' + i + '<br>');//?
+    document.write('최종 i =' + i + '<br>'); //? 루프가 실행 되지 않아, i = 1 로 출력된다.
+}
+// *exp.10 break문 활용
+
+function runBreak(){
+    for (var i = 0; true; i++){ //? 수행되는 조건 자체가 true 상태기 때문에 무한 루프.
+        alert(i + '번째 반복문'); //? 수행. 
+        if(!confirm('계속?')){//? alert으로 반복문을 띄운 이후, confirm의 질문에 확인(true)을 누르면 앞의 논리부정연산자로인해 true가 false로 바뀌면서 break를 수행하지 않고 다시 재반복을 수행한다.
+            break;
+        }
+    }
+}
+
+// ! 다중 for
+function halfPyramid(){
+    var star = '';
+    for (var  i = 1; i <= 10; i++){ //? 1. ifor = 1~10 까지 수행
+        for (var j = 0; j < i; j++){ //? 2.jfor = j가 i보다 작을때 까지 반복 수행 *,**,***,****,*****......
+            star += '*'; //? 변수 star에 생성된 *을 넣음.
+        }
+        star += '<br>'; //? ifor 만큼 <br>을 변수 star에 넣음
+    }
+    document.write(star); //?  반절 피라미드출력.
 }
