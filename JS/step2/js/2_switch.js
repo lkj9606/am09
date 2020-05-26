@@ -23,7 +23,23 @@ function switchGrammar(){
 }
 
 // todo. lotto과제를 switch로 변경.
+function lotto(){
+    var numbValue = window.prompt('입력하실번호는?');
 
+    switch (numbValue){
+        case "1":
+            alert("1등 10억!");
+            break;
+        case "2":
+            alert("2등 5천!");
+            break;
+        case "3":
+            alert("3등 300!");
+        default:
+            alert("낙첨!");
+            break;
+    }
+}
 // todo.1 switch 문을 이용한 계산기.
 
 //? 첫번째 숫자와 연산자와 두번째 숫자를 입력받아 계산해주는 계산기.
