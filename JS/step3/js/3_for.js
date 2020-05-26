@@ -128,3 +128,13 @@ function runContinue(){
         alert(output);
     }
 }
+
+// *exp.7 break문
+
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;//?
+        document.write(i + '<br>'); //?
+    }
+    document.write('최종 i =' + i + '<br>');//?
+}
