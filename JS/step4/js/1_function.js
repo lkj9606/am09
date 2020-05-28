@@ -150,11 +150,55 @@ function calculator(op, numb1, numb2){
             result = add(numb1, numb2);
             break;
         case "-" :
-            //?
+            result = sub(numb1, numb2);
+            break;
+        case "*" :
+            result = mul(numb1, numb2);
+            break;
+        case "/" :
+            result = div(numb1, numb2);
+            break;
+        default :
+            result = "잘못된 값입니다.";
+            break;
+            //? 분리된 각 연산함수 들.
     }
+    return result;
 }
 function add(numb1,numb2){
     addResult = numb1 + numb2;
     return addResult;
 }
-//?
+function sub(numb1,numb2){
+    subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){
+    mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){
+    divResult = numb1 / numb2;
+    return divResult;
+}
+
+// *exp.8 함수를 변수에 담기.
+function hello(name){
+    console.log(name + " welcome!");
+}
+// hello("Mark");
+
+//? var func = hello; func 라는 변수에 hello라는 함수를 담았다.
+//? func("Stark"); 변수를 호출해서 안에 매개변수를 넣으면 함수가 실행된다.
+
+// *exp.9 매개변수 값으로 함수 사용.
+
+function hi1(){
+    console.log('Hello.'); //* Hello를 log로 출력.
+}
+function hi2(){
+    console.log('안녕하세요.'); // * 안녕하세요를 log로 출력.
+}
+function execute(func){
+    func();
+}
