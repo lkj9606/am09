@@ -140,3 +140,21 @@ function printGugudan(){
         document.write("<br>");
     }
 }
+
+// *exp.7 사칙연산 부를 함수로 변환하여 보다 관리가 편한 계산기.
+
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" :
+            result = add(numb1, numb2);
+            break;
+        case "-" :
+            //?
+    }
+}
+function add(numb1,numb2){
+    addResult = numb1 + numb2;
+    return addResult;
+}
+//?
