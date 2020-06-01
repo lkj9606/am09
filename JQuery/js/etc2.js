@@ -88,5 +88,23 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log("입력한 키 코드" + e.keyCode);
+        
+        switch(e.keyCode){
+            case 87 :
+                currentYpos -= range;
+            break;
+            case 65 :
+                currentXpos -= range;
+            break;
+            case 83 :
+                currentYpos += range;
+            break;
+            case 68 :
+                currentXpos += range;
+            break;
+            default:
+                alert('w,a,s,d 중 하나만 입력하세요.');
+            break;
+        }
     })
 }
