@@ -13,21 +13,60 @@
         $(document).ready(function(){
             $('.slider').bxSlider({
                 mode: 'horizontal', // 'horizontal' : 좌,우 'vertical' : 상,하 'fade' : fade in, out
+                
                 adaptiveHeight: true, // 'mode : horizontal' 시에만 구동. 각 이미지의 높이에 따라 슬라이더 높이의 유동적 조절 여부
                 adaptiveHeightSpeed: 500, //adaptiveHeight 동작속도
-                speed: 1000, // m/s ex > 1000 = 1s
+                
+                speed: 500, // m/s ex > 1000 = 1s
                 easing: 'ease-out', // 동작 가속도 css와 동일
+                
                 startSlide: 0, // 시작시 사용할 slide(0부터시작)
                 randomStart: false, //  시작시 random slide 여부
+                
                 infiniteLoop: false, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
                 hideControlOnEnd: true, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
-                captions: true
+                
+                captions: true, // img 태그에 title 속성값을 사용할시, 그부분의 출력여부 단, css .bx-wrapper .bx-caption 부분 조절 필요
+               
+                ticker: false,  //ticker 모드 사용 (speed 조절필요)
+                tickerHover: false, //ticker 모드 사용시 마우스 오버로 멈추기.
+                
+                video: true,//slide에 video 사용 및 활성화여부. 반응성 향상, 사용할 시에 plugins/jquery.fitvids.js include 필요
+                
+                preloadImages: 'visible', // "visible"은 현재 보여지는 슬라이드 이미지만 로드 이후 순차적 로드, "all"로 설정하면 이미지가 모두 로드되야 작동.
+            
+                //responsive method
+                responsive : true //반응형 지원여부
+                /*
+                    responsive 가 false일 경우, slider에 고정폭과 고정높이가 필요하다.
+                    위치는 jquery.bxslider.css .bx-wrapper class에 width 고정, height는 이미지 높이에 따라 자동 조정.
+
+                    pc 만 지원하는 반응형일 경우
+                    같은 class인 .bx-wrapper 에게 min-width를 1000px을 지정 하면 된다.
+                */
             });
         });
     </script>
     <style>
+        *{
+            margin:0; padding: 0;
+        }
         .bx-wrapper img{
             width: 100%;
+        }
+        ul.slider:after{
+            content:''; display: block; visibility: hidden; clear: both;
+        }
+        /* caption Control */
+        ul.slider li:nth-child(even) .bx-caption{
+            background-color: rgba(255,0,0,0.3);
+            bottom: 50%; height: 50%;
+            font-size: 50px; text-align: center;
+        }
+        ul.slider li:nth-child(odd) .bx-caption{
+            background-color: rgba(0,0,255,0.3);
+            bottom: 25%; height: 75%; font-size: 25px;
+            text-align: right;
         }
     </style>
 </head>
