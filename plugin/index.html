@@ -6,12 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bx-slider</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="plugins/jquery.fitvids.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                mode: 'horizontal', // 'horizontal' : 좌,우 'vertical' : 상,하 'fade' : fade in, out
+                adaptiveHeight: true, // 'mode : horizontal' 시에만 구동. 각 이미지의 높이에 따라 슬라이더 높이의 유동적 조절 여부
+                adaptiveHeightSpeed: 500, //adaptiveHeight 동작속도
+                speed: 1000, // m/s ex > 1000 = 1s
+                easing: 'ease-out', // 동작 가속도 css와 동일
+                startSlide: 0, // 시작시 사용할 slide(0부터시작)
+                randomStart: false, //  시작시 random slide 여부
+                infiniteLoop: false, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
+                hideControlOnEnd: true, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
+                captions: true
+            });
+        });
+    </script>
+    <style>
+        .bx-wrapper img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <ul>
+    <ul class="slider">
         <li><img src="images/photo1.jpeg" title="ex1" alt="exImg"></li>
         <li><img src="images/photo2.jpeg" title="ex2" alt="exImg"></li>
         <li><img src="images/photo3.jpeg" title="ex3" alt="exImg"></li>
