@@ -36,7 +36,7 @@
                 preloadImages: 'visible', // "visible"은 현재 보여지는 슬라이드 이미지만 로드 이후 순차적 로드, "all"로 설정하면 이미지가 모두 로드되야 작동.
             
                 //responsive method
-                responsive : true //반응형 지원여부
+                responsive : true, //반응형 지원여부
                 /*
                     responsive 가 false일 경우, slider에 고정폭과 고정높이가 필요하다.
                     위치는 jquery.bxslider.css .bx-wrapper class에 width 고정, height는 이미지 높이에 따라 자동 조정.
@@ -44,6 +44,18 @@
                     pc 만 지원하는 반응형일 경우
                     같은 class인 .bx-wrapper 에게 min-width를 1000px을 지정 하면 된다.
                 */
+                touchEnabled: false, //터치스와이프 기능 사용여부 //chrome 터치불가현상.
+                swipeThreshold: 0, //터치하여 스와이프 할때 변환 효과에 소모되는 시간 설정
+                oneToOneTouch: false, // fade 효과가 아닌 슬라이드는 손가락의 접지상태에 따라 슬라이드를 움직일수있다.
+                preventDefaultSwipeX: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 x축으로 움직일지에 대한 여부
+                preventDefaultSwipeY: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 y축으로 움직일지에 대한 여부
+            
+                // pager method
+                pager: true, //pager 인디케이터 출력여부
+                //pagerType: 'short',  pager 타입 설정. full은 default, short 은 1/4 이런 형식의  출력
+                //pagerShortSeparator: ' | ', short 타입 일 경우 카운트 사이 문자 설정 
+                //pagerSelector: '.newPager' 기본 pager 를 대체
+                pagerCustom: '.thumbPager'
             });
         });
     </script>
@@ -68,6 +80,22 @@
             bottom: 25%; height: 75%; font-size: 25px;
             text-align: right;
         }
+
+        /* newPager */
+        .newPager{
+            text-align: center;
+        }
+        .newPager .bx-pager .bx-pager-item{
+            display: inline-block; margin-left: 10px;
+        }
+        .newPager a{
+            text-indent: -9999px; background-color: #808080;
+            width: 20px; height: 20px; border-radius: 10px;
+            text-decoration: none; display: block;
+        }
+        .newPager a:hover{
+            background-color:salmon;
+        }
     </style>
 </head>
 <body>
@@ -78,5 +106,28 @@
         <li><img src="images/photo4.jpeg" title="ex4" alt="exImg"></li>
         <li><img src="images/photo5.jpeg" title="ex5" alt="exImg"></li>
         <li><iframe src="https://www.youtube.com/embed/10bKHJNtQvU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ul>
+    <div class="newPager"></div>
+    <ul class="thumbPager">
+        <li>
+            <a href="" data-slide-index="0" href="#">
+                
+            </a>
+        </li>
+        <li>
+            <a href="" data-slide-index="1" href="#"></a>
+        </li>
+        <li>
+            <a href="" data-slide-index="2" href="#"></a>
+        </li>
+        <li>
+            <a href="" data-slide-index="3" href="#"></a>
+        </li>
+        <li>
+            <a href="" data-slide-index="4" href="#"></a>
+        </li>
+        <li>
+            <a href="" data-slide-index="5" href="#"></a>
+        </li>
     </ul>
 </html>
