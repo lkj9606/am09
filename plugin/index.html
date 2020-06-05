@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bx-slider</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bxslider.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="plugins/jquery.fitvids.js"></script>
@@ -26,7 +26,7 @@
                 infiniteLoop: false, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
                 hideControlOnEnd: true, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
                 
-                captions: true, // img 태그에 title 속성값을 사용할시, 그부분의 출력여부 단, css .bx-wrapper .bx-caption 부분 조절 필요
+                captions: false, // img 태그에 title 속성값을 사용할시, 그부분의 출력여부 단, css .bx-wrapper .bx-caption 부분 조절 필요
                
                 ticker: false,  //ticker 모드 사용 (speed 조절필요)
                 tickerHover: false, //ticker 모드 사용시 마우스 오버로 멈추기.
@@ -55,7 +55,39 @@
                 //pagerType: 'short',  pager 타입 설정. full은 default, short 은 1/4 이런 형식의  출력
                 //pagerShortSeparator: ' | ', short 타입 일 경우 카운트 사이 문자 설정 
                 //pagerSelector: '.newPager' 기본 pager 를 대체
-                pagerCustom: '.thumbPager'
+                pagerCustom: '.thumbPager',
+
+                // control method
+                controls: true, // 좌,우 컨트롤 버튼 출력 여부
+                
+                //nextSelector: '.next', 기본 next 를 대체할 대상
+                //prevSelector: '.prev',  기본 prev 를 대체할 대상
+                //nextText: '다음',  다음 버튼 에 text 삽입
+                //prevText: '이전',  이전 버튼 에 text 삽입
+
+                /*
+                    customize controler
+                    1. 이미지를 수정하는 방법
+                    images / controls.png 파일 자체를 수정 하여 디자인을 바꿀수있다.
+                    만약 크기가 커지거나 작아진다면, 그에 맞는 좌표값을 크롬 개발자
+                    도구에서 찾아내어 수정 해줘야 한다.
+                    (기존 객체 css 위치 jquery.bxslider.css 파일 내 125번 라인
+                    .bx-wrapper .bx-controls-direction a 부분을 수정 하면 됨)
+
+                    2. 객체삽입방법
+                    nextSelector와 prevSelector 함수를 삽입하고, 
+                    만들어 낼 객체의 클래스명을 지목한후, body 내에 해당 
+                    클래스이름을 가진 객체를 만들어준다. 
+                    단, 여기서 주의할 점은 객체를 만들고 스타일을 지정할 대상은
+                    객체 안의 a 태그를 지목해야 한다.
+                    a 태그가 객체 안에 자동으로 생성 되기 때문에..
+
+                */
+                auto: true, // 자동 재생 활성화
+                autoControls: true, //자동재생 제어버튼 활성화  단, auto 모드가 활성화 되어있어야함.
+                autoControlsCombine: true, // 재생시 중지버튼 활성화, 중지시 재생버튼 활성화
+
+
             });
         });
     </script>
@@ -96,6 +128,27 @@
         .newPager a:hover{
             background-color:salmon;
         }
+
+        /* thumbPager */
+        .thumbPager{
+            width: 50%; margin: 0 auto; display: flex;
+            flex-flow: row nowrap; list-style: none;
+            justify-content: space-around; padding: 1%;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+        .thumbPager li{
+            background-color: black; position: relative;
+        }
+        .thumbPager li a{
+            display: block; overflow: hidden; line-height: 0;
+            opacity: 0.5; transition: opacity 0.5s ease-in;
+        }
+        .thumbPager li:hover a{
+            opacity: 1;
+        }
+        .thumbPager li img{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -111,23 +164,35 @@
     <ul class="thumbPager">
         <li>
             <a href="" data-slide-index="0" href="#">
-                
+                <img src="images/thumb_photo1.jpg" alt="photo1">
             </a>
         </li>
         <li>
-            <a href="" data-slide-index="1" href="#"></a>
+            <a href="" data-slide-index="1" href="#">
+                <img src="images/thumb_photo2.jpg" alt="photo2">
+            </a>
         </li>
         <li>
-            <a href="" data-slide-index="2" href="#"></a>
+            <a href="" data-slide-index="2" href="#">
+                <img src="images/thumb_photo3.jpg" alt="photo3">
+            </a>
         </li>
         <li>
-            <a href="" data-slide-index="3" href="#"></a>
+            <a href="" data-slide-index="3" href="#">
+                <img src="images/thumb_photo4.jpg" alt="photo4">
+            </a>
         </li>
         <li>
-            <a href="" data-slide-index="4" href="#"></a>
+            <a href="" data-slide-index="4" href="#">
+                <img src="images/thumb_photo5.jpg" alt="photo5">
+            </a>
         </li>
         <li>
-            <a href="" data-slide-index="5" href="#"></a>
+            <a href="" data-slide-index="5" href="#">
+                <img src="images/thumb_photo6.jpg" alt="photo6">
+            </a>
         </li>
     </ul>
+    <a href="" class='prev'></a>
+    <a href="" class="next"></a>
 </html>
