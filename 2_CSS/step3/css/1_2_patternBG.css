@@ -13,3 +13,9 @@ body{
     background-color: #60f; color: white;
     padding: 20px; margin: 0 0 20px;
 }
+.wrap button{
+    line-height: 50px; padding: 0 40px;
+    color: white; border: none;
+    background-image: url('../images/pt_ex.png');
+    background-repeat: repeat-y;
+}
