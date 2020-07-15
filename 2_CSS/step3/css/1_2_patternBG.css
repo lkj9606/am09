@@ -1,0 +1,15 @@
+html,
+body,
+.wrap{
+    height: 100%;
+}
+body{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif'); 
+}
+.wrap p{
+    background-color: #60f; color: white;
+    padding: 20px; margin: 0 0 20px;
+}
