@@ -52,4 +52,18 @@ p.t_indent{
     width: 150px; line-height: 50px;
     border: none; text-indent: -9999px;
 }
+a{
+    display: block; font-size: 30px;
+    margin-bottom: 40px;
+}
+a.t_deco_N{text-decoration:none; text-transform: none; color: #06f;}
+a.t_deco_U{text-decoration:underline; text-transform: lowercase; color:#60f;}
+a.t_deco_O{text-decoration:overline; text-transform: capitalize; color:#f06;}
+a.t_deco_T{text-decoration:line-through; text-transform: uppercase; color:#f60;}
 
+p.DR_ltr{
+    direction: ltr;
+}
+p.DR_rtl{
+    direction: rtl;
+}
