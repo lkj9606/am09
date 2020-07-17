@@ -38,3 +38,11 @@ div{
 .outsetBox {
     border: 20px outset #930;
 }
+.radiusBox{
+    background-color: black; color: yellow;
+    border-radius: 20px 10px;
+}
+.circleBox{
+    width: 170px; height: 170px; border-radius: 85px;
+    background-color: yellow; text-indent: -9999px;
+}
