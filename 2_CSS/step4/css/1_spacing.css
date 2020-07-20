@@ -12,3 +12,15 @@ body{
     background-color: #ddd;
     margin: 20px 15px;
 }
+/* 
+    !firstDiv의 margin-bottom: 10px 상쇄.
+    ? secondDiv의 margin-top이 더 크기 때문. (같아도상관없음. 가산이되지않기때문에)
+*/
+.centerDiv{
+    width: 300px; border: 1px solid #33f;
+    padding: 10px; margin: 0 auto; text-align: center;
+}
+.centerDiv article{
+    margin: 0 10px;
+    background-color: #f33; color: white;
+}
