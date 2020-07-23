@@ -27,3 +27,31 @@ header nav ul li:not(:first-child){
 header nav ul li a{
     text-decoration: none; color: slateblue;
 }
+header nav ul li a:hover{
+    color: springgreen;
+}
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap .imgBox{
+    margin-bottom: 30px;
+}
+.wrap .imgBox img{
+    width: 100%;
+}
+.wrap ul{
+    border: 1px solid #66c;
+    box-sizing: border-box;
+    margin:0; padding: 0; width: 33%;
+    float: left;
+}
+.wrap ul:not(:first-of-type){
+    margin-left: 0.5%;
+}
+.wrap ul li{
+    display: block;
+}
+footer{
+    background-color: #069; color: #fff;
+    padding: 10px 0; text-align: center;
+}
