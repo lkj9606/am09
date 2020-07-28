@@ -58,3 +58,27 @@
     width: 300px; height: 300px; border: 10px solid #00f;
 }
 /*문자열 선택자는 해당 문자열 유형으로 분리 적용 할 수 있다.(계륵)*/
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/*
+    동위 선택자에서 A+B는 A 바로뒤에 위치하는 B를 지목하고,
+    A~B는 A뒤에있는 B모두를 선택한다.
+*/
+
+.activeSelector h1:hover{
+    font-size:35px; color: #0f0; cursor: pointer;
+}
+/*반응선택자 - 링크 수업 부분 과 동일*/
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; vertical-align: middle;
+    height: 25px; overflow-y: hidden;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
