@@ -104,3 +104,44 @@ input 상태에 따라 대상을 작동 시킬 수 있다.
 -p.s- 크로스브라우징을 해야 할 때, 모든 브라우저를 테스트 하지말고,
 ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하게 적용 된다. 
 */
+.normalSelector ul{
+    overflow: hidden; list-style: none;
+}
+.normalSelector ul li{
+    margin: 0; padding: 15px; float: left;
+}
+.normalSelector ul li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.normalSelector ul li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.normalSelector ul li:nth-child(odd){
+    background-color: #444; color: white;
+}
+.normalSelector ul li:nth-child(even){
+    background-color: #09f;
+}
+
+.normalSelector table{
+	width:100%;
+	border-width:3px 1px 2px 1px;
+	border-style:solid;
+	border-color:#3CF;
+}
+.normalSelector table caption{color:#666; font-size:12px; line-height:40px;}
+.normalSelector table tr th,.normalSelector table tr td{
+	width:14.28%;
+	border-right:1px solid #3cf;
+	border-bottom:1px solid #3cf;
+	padding:10px 0;
+}
+.normalSelector table tr th{background-color:#6CF; }
+.normalSelector table tr td{text-align:center;}
+/*
+normal selector의 브라우저별 지원 현황
+IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
+
+    * http://nthmaster.com
+
+*/
