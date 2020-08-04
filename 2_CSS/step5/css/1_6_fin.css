@@ -82,3 +82,17 @@ ul li mark{
     padding: 3px; font-size: 9px; background-color: #900;
     color: white;
 }
+
+ol{
+    padding: 0; text-align: center;
+}
+ol li{
+    display: inline-block;
+}
+ol li a{
+    text-decoration: none; font-size: 14px;
+    color: #00556b; display: block; padding: 5px;
+}
+ol li a:hover{
+    color: red;
+}
