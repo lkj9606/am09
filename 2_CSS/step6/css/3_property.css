@@ -39,3 +39,67 @@
 .visibilityProperty table{
     visibility: collapse;
 }
+
+/*
+    ? visibility의 속성은 총 3가지
+    * visibility : visible  = 보여주다.
+    * visibility : hidden = 감추다.(영역보존)
+    * visibility : collapse = 테이블만 감추다.
+*/
+.opacityProperty ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%;
+    background-color: #000; position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li img{
+    width: 100%; opacity: 0.3; transition-duration: 1s;
+}
+.opacityProperty ul li:hover{
+    cursor: pointer;
+}
+.opacityProperty ul li:hover img{
+    opacity: 1;
+}
+.opacityProperty ul li dl{
+    position: absolute; width: 33.33%; height: 33.33%;
+    left: 33.33%; top: 33.33%;
+    background-color: rgba(255,255,255,0.5);
+}
+.opacityProperty ul li dl dt{
+    font-size: 18px; font-weight: bold;
+    margin-bottom: 30px; text-align: center;
+}
+.opacityProperty ul li dl dd{
+    font-size: 14px; color: #666; text-align: center;
+}
+/*
+    ! opacity의 값은 객체의 투명도를 설정 하며 0 ~ 1 로 규정 할 수 있고 1/100 % 로 표현된다.
+*/
+
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/*
+    content-box 속성은 기본적으로 적용되는(default)값, 안의 공간을 해당 width로 잡고 밖에 padding,border를 추가
+    계산 하여 총 width를 구하는 방식.
+    border-box 속성은 전체 크기를 먼저 width로 잡고 안의 padding, border를 나중에 계산하는 방식
+
+    content-box : box in width + padding + border = width
+    border-box : width = box in width - (padding + border)
+*/
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    /* ?          x   y   blur        color*/
+}
