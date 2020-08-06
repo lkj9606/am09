@@ -52,3 +52,9 @@ body{
     width: 100%; border: none; line-height: 0;
     opacity: 0.5; transition-duration: 0.75s;
 }
+.wrap ul.picList li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
+}
