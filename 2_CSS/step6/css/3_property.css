@@ -103,3 +103,24 @@
     text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
     /* ?          x   y   blur        color*/
 }
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 2px 10px rgba(255,200,200,0.7);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 15px 10px rgba(255,200,200,0.7);
+}
+/*
+    shadow:  
+        우측으로 간격, 
+        하단으로 간격, 
+        흐림도(우측,하단간격 너비의 영향 받음), 
+        그림자컬러 또한 속성값 앞에 inset을 삽입하면 
+        내부 그림자 효과로 전환 가능
+        spread 확산도
+
+    보다 쉽게 만들기
+    http://css3generator.com 에서 값입력후 소스코드생성
+*/
