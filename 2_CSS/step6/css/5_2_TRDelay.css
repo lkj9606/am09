@@ -35,3 +35,34 @@ body{margin: 0;}
 .delay2 ul:hover li:nth-child(4){transition-delay: 1.5s; background-color: #06C;}
 .delay2 ul:hover li:nth-child(5){transition-delay: 2s; background-color: #990;}
 .delay2 ul:hover li:nth-child(6){transition-delay: 2.5s; background-color: #C60;}
+
+.delay3 ul{
+    height: 300px; background-color: #000;
+    margin: 0; padding: 0;
+}
+.delay3 ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.delay3 ul li{
+    display: block; float: left; width: 20%;
+    height: 0; transition-duration: 1s;
+}
+
+.delay3 ul li:nth-child(1){
+    transition-timing-function: ;
+}
+.delay3 ul li:nth-child(2){
+    transition-timing-function: ;
+}
+.delay3 ul li:nth-child(3){
+    transition-timing-function: ;
+}
+.delay3 ul li:nth-child(4){
+    transition-timing-function: ;
+}
+.delay3 ul li:nth-child(5){
+    transition-timing-function: ;
+}
+.delay3 ul:hover li{
+    height: 100px; background-color: #ff0;
+}
