@@ -24,3 +24,7 @@ div:nth-of-type(3) span{
     background-color: blue; color: white;
     transform: rotate(10deg) translate(100px, 50px);
 }
+div:nth-of-type(4) span{
+    background-color: brown; color: white;
+    transform: rotate(10deg) translate(100px, 50px) skewX(10deg);
+}
