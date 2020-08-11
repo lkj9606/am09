@@ -25,7 +25,8 @@ body{
         transform: rotate(0deg);
     }50%{
         left: 500px;
-    }to{
+    }
+    to{
         left: 500px;
         transform: rotate(360deg);
     }
@@ -41,4 +42,19 @@ body{
     todo normal 표준재생(0-100%)
     todo alternate 왕복재생 (0-100%,100%-0)
     todo alternate-reverse alternate역방향재생
+*/
+
+.circle:hover{
+    animation-play-state: paused;
+}
+/* 
+    ?play-state
+    * paused 는 중지, running 은 재생.
+*/
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이 소수점 포함 입력 가능
+    * keyframe start = from, end = to, 나머지는 %
+    ! ex> 0 - 50% - 100% (위 예제)
+    *  rotate는 회전속성, deg는 각도를 뜻한다.
 */
