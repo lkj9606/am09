@@ -38,3 +38,9 @@ div span:nth-of-type(4){
     background-color: yellow;
     transform: rotateY(270deg) translate3d(0px,0px,100px);
 }
+div span:nth-of-type(5){
+    background-color: brown; transform: rotateX(90deg) translate3d(0px,0px,100px);
+}
+div span:nth-of-type(6){
+    background-color: deeppink; transform: rotateX(270deg) translate3d(0px,0px,100px);
+}
