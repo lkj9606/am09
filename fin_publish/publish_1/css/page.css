@@ -1,0 +1,24 @@
+
+@media screen and (min-width: 1280px){
+    body > figure:after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    body > figure img{
+        float: left; max-width: 235px; width: 25%;
+    }
+    body > figure figcaption{
+        margin-left: 10%; width: 65%; float: left;
+    }
+    body > figure figcaption > *:not(a){
+        margin-bottom: 30px;
+    }
+    body > figure figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    body > figure figcaption p{
+        font-size: 14px; color: rgba(65,61,75,0.75);
+        font-weight: 300; line-height: 22px;
+    }
+}
