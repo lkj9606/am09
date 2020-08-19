@@ -128,6 +128,27 @@ a{
         font-size: 15px; font-weight: 900;
         line-height: 50px; color: white;
     }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px;
+        color: white;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        box-sizing: border-box;
+        background-repeat: no-repeat; background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span a{
+        display: block; color: white;
+    }
+    footer > div div:nth-of-type(2) address span:first-child{
+        background-image: url('../images/bul_map.png');
+    }
+    footer > div div:nth-of-type(2) address span:last-child{
+        background-image: url('../images/bul_phone.png');
+    }
     
 
 
