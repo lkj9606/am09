@@ -1,5 +1,6 @@
 header > div nav ul li a,
 body > figure figcaption p,
+section.videoArea h2,
 footer > div *{
     font-family: 'Roboto';
 }
