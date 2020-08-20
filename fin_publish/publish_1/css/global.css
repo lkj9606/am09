@@ -5,7 +5,9 @@ footer > div *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
-body > figure figcaption h2{
+body > figure figcaption h2,
+section.expArea h2,
+section.expArea > p{
     font-family: 'Playfair Display';
 }
 
@@ -23,6 +25,7 @@ a{
 
 @media screen and (min-width: 1280px){
     body > figure,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto;
         padding: 70px 0;
