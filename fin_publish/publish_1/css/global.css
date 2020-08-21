@@ -2,13 +2,17 @@ header > div nav ul li a,
 body > figure figcaption p,
 section.videoArea h2,
 section.expArea ul li > *,
+section.teamArea div ul li figure figcaption dl,
+section.teamArea div ul + p,
 footer > div *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 body > figure figcaption h2,
 section.expArea h2,
-section.expArea > p{
+section.expArea > p,
+section.teamArea h2,
+section.teamArea > p:not(:last-of-type){
     font-family: 'Playfair Display';
 }
 
@@ -31,6 +35,7 @@ section[class *= Area] > hr{
 @media screen and (min-width: 1280px){
     body > figure,
     section.expArea,
+    section.teamArea div,
     footer > div{
         max-width: 940px; margin: 0 auto;
         padding: 70px 0;
