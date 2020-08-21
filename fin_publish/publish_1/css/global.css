@@ -1,6 +1,7 @@
 header > div nav ul li a,
 body > figure figcaption p,
 section.videoArea h2,
+section.expArea ul li > *,
 footer > div *{
     font-family: 'Roboto';
 }
@@ -19,6 +20,10 @@ a{
 }
 .btn_more{
     font-family: 'Hammersmith One';
+}
+section[class *= Area] > hr{
+    width: 3%; min-width: 50px; border-top: 2px solid rgba(65,61,75, 0.3);
+    margin: 0 auto 45px;
 }
 /* All Using */
 
